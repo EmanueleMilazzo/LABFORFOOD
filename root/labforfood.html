@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>LABFORFOOD delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="./img/logo-nero.png"/>
+  <link rel="stylesheet" href="./stili/stili.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+
+</head>
+
+<body>
+  <!--logo-->
+
+  <header>
+   
+    <div id="logo">
+     
+      <a href="./labforfood.html" id="img_logo"> 
+       <img src="https://i.postimg.cc/N0XgDRgg/logo-nero.png" alt="logo">
+       
+        <h1 class="h1"><strong>LABFORFOOD</strong> Il delivery che ti &egrave; vicino</h1>
+      </a>
+        
+    </div>
+
+    <!--start ham menu-->
+
+    <div id="hmbr">
+      <button class="ham">
+        <span class="menuIcon material-icons">menu</span>
+        <span class="xIcon material-icons">close</span>
+      </button>
+
+      <ul class="menu">
+        <li><a class="menuLink" href="./labforfood.html">Home</a></li>
+        <li><a class="menuLink" href="./labforfood-restaurant.html">Ristoranti</a></li>
+        <li><a class="menuLink call_first_p" href="#">Login/Sign in</a></li>
+      </ul>
+
+    </div>
+
+    <!--  barra menu   wrong_password.style.display ==='none' && --> 
+
+    <div id="nav">
+      <ul>
+        <a href="https://www.facebook.com/" target="_blank">
+          <li id="fb" class="social"> </li>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <li id="inst" class="social"> </li>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <li id="twit" class="social"> </li>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <li id="ytb" class="social"> </li>
+        </a>
+          
+        <li><a class="page" href="./labforfood.html">Home</a></li>
+        <li><a class="page" href="./labforfood-restaurant.html">Ristoranti</a></li>
+        <li><a class="page call_first_p" href="#">Login/Sign up</a></li>
+
+      </ul>
+    </div>
+    
+  </header>
+  
+  
+    <!--     primo pop_up    display none       -->
+ 
+	    <div id="pirmo_popup">
+        <div id="campo_uno">
+          <form id="log_in" action="#">
+            <labe for="email"></labe>
+            <input type="email" id="email" name="email" placeholder="Indirizzo Email">
+                   
+            <labe for="password"></labe>
+            <input type="password" name="password" placeholder="Password">
+                   
+            <button type="submit" id="primo_log_in" class="btn">Accedi</button>  
+
+          </form>
+
+            <p id="messaggio_ok" class="paragrafo_ok"></p>
+            <p id="messaggio_ko" class="paragrafo_ko"></p>
+               
+             <p><a href="#">Password dimenticata?</a></p>
+           
+      
+          <button type="submit" id="crea_account">Crea nuovo account</button>
+               
+        </div> 
+	    </div>
+ 
+    <!--     secondo pop_up    display none       -->
+ 
+        <div id="secondo_popup">
+      <div id="campo_due">
+          <form id="sign_up" action="#">
+     
+            <labe for="email_sign_up"></labe>
+            <input type="email" id="email_sign_up" placeholder="Indirizzo Email">
+                 
+            <labe for="password_sign_up"></labe>
+            <input type="password" placeholder="Password (Minimo 5 caratteri)" id="password_sign_up">
+                 
+            <labe for="confirm_password"></labe>
+            <input type="password" placeholder="Conferma Password" id="confirm_password">
+                 
+              <p>Dichiari di accettare le <a href="#">informative sulla privacy?</a></p>
+              
+               <!-- <div id="cover_button"></div>-->
+
+              <div id="yes_no" class="privacy">
+                    <label for="informative_yes">Si</label>
+                    <input type="radio" id="informative_yes" name="informative" value="yes">
+                    
+                    <label for="informative_no">No</label>
+                    <input type="radio" id="informative_no" name="informative" value="no"> 
+              </div>
+              
+              
+
+                 <button type="submit" class="btn" id="crea" value="submit">Crea</button>
+
+                 <p id="wrong_password"></p>
+                 
+          </form>       
+      </div>
+    </div>
+    
+     <!--     gap       -->     
+      
+        <div id="gap">
+            
+              <!--  slide  -->
+
+    <div id="slide_contenitore">
+
+      <div id="img_1" class="mostra"></div>
+      <div id="img_2" class="mostra"></div>
+      <div id="img_3" class="mostra"></div>
+      <div id="img_4" class="mostra"></div>
+      <div id="img_5" class="mostra"></div>
+      
+    </div>
+            
+            
+        </div>
+  
+
+  <main>
+      
+      <!--  campo indirizzo  -->
+      
+      <div id="wrap">
+
+       <div id="indirizzo">
+          <h3>Indirizzo di consegna</h3>
+
+            <form id="address" href="./LabForFood_Ristoranti.html">
+                  <label for="citta"></label>
+                  <input type="text" id="citta" name="citta" placeholder="Citt&agrave;">
+
+                  <label for="via"></label>
+                  <input type="text" id="via" placeholder="Via" name="via">
+
+                  <label for="numero_c"></label>
+                  <input type="number" id="numero_c" placeholder="Numero Civico" name="numero_c">
+
+                  <button type="submit" >Cerca</button>
+            </form>
+
+        </div>
+        
+    
+      
+       <!--  social  -->
+      
+      
+    
+        <div id="app_contenitore">
+
+            <h3>Amore, stasera ordiniamo...</h3>
+
+          <p class="social_p">Ottieni l'app LABFORFOOD premiata da Apple e scegli tra 20.000 ristoranti e centinaia di negozi in più di 100 città. Scopri e ottieni ciò che desideri: te lo porteremo direttamente.</p>
+
+          <a href="https://www.apple.com/app-store/" target="_blank"><img src="https://i.postimg.cc/pVfmRMM2/app-store-badge.png" alt="app_store_logo"></a>
+          <a href="https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank"><img src="https://i.postimg.cc/C1yKpmvB/google-play-badge.png" alt="google_logo"></a>
+        
+
+        </div>
+      
+       
+      
+      
+      <div id="social_us">
+          
+          <h3>Seguici su...</h3>
+          
+          <p class="social_p">Ottieni l'app LABFORFOOD premiata da Apple e scegli tra 20.000 ristoranti e centinaia di negozi in più di 100 città. Scopri e ottieni ciò che desideri: te lo porteremo direttamente.</p>
+
+          <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+
+    </div>
+          
+ </div>
+
+  </main>
+
+  <footer>
+      
+    <div id="payment_acpt">
+        
+        <img src="https://i.postimg.cc/P5gHCN10/metodi-Pagamento.png" alt="paypal_logo"> </div>
+
+    <div id="find_us">
+
+      <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./script/script.js"></script>
+</body>
+
+</html>
